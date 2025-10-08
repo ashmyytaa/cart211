@@ -1,3 +1,6 @@
+/*CSS Style Sheet*/
+
+/* body style: font, background color*/
 body {
     font-family: Srial, Helvetixa, sans-serif;
     padding: 0%;
@@ -16,6 +19,7 @@ body {
     text-align: justify;
 }
 
+/*header styling*/
 header h1 {
 
     text-align: right;
@@ -25,8 +29,6 @@ header h1 {
 
 }
 
-
-
 header h2 {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -35,15 +37,16 @@ header h2 {
     color: rgb(91, 32, 169);
 }
 
+/*image styling*/
 header img {
     margin-top: 30px;
     margin-left: 200px;
     margin-right: 0%;
     width: 70%;
     border: 5px solid #3f1981;
-
 }
 
+/*navigation bar styling*/
 nav {
     margin-top: 50px;
     margin-left: 50px;
@@ -75,6 +78,7 @@ section {
 
 }
 
+/*article (text descriptions and paragraphs) styling*/
 article p:last-child {
     margin-bottom: 10px;
     color: rgb(85, 35, 132);
@@ -91,6 +95,7 @@ article h3 {
 
 }
 
+/*footer styling*/
 footer {
     margin-top: 20px;
     min-height: 30px;
@@ -107,6 +112,7 @@ footer a {
     color: rgb(46, 9, 73);
 }
 
+/*book covers styling*/
 .books {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -145,6 +151,7 @@ table img {
     max-height: 100%;
 }
 
+/*text descriptions styling*/
 p {
     margin-top: 0px;
     min-height: 50px;
