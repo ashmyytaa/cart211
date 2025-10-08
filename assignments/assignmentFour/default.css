@@ -1,3 +1,6 @@
+/*CSS Style Sheet*/
+
+/*Body styling*/
 body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -20,6 +23,7 @@ body {
     text-align: justify;
 }
 
+/*header styling*/
 header h1 {
     text-align: right;
     font-size: 25px;
@@ -36,6 +40,7 @@ header h2 {
     background-color: #894d3e;
 }
 
+/*header image*/
 header img {
     margin-top: 50px;
     width: 100%;
@@ -43,6 +48,7 @@ header img {
     border-width: 5px;
 }
 
+/*navigation styling*/
 nav {
     margin-top: 50px;
     margin-left: 50px;
@@ -64,6 +70,7 @@ nav a:hover {
 
 }
 
+/*paragraphs, text description styling*/
 section {
     margin-bottom: 30px;
     text-align: justify;
@@ -82,6 +89,7 @@ article p:last-child {
 
 }
 
+/*footer styling*/
 footer {
     margin-top: 20px;
     min-height: 30px;
@@ -96,6 +104,7 @@ footer a {
     color: rgb(255, 255, 255);
 }
 
+/*books styling styling*/
 .books {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -104,6 +113,7 @@ footer a {
 
 }
 
+/*books image styling*/
 .books img {
     display: block;
     width: 100%;
@@ -131,6 +141,8 @@ table img {
     max-height: 100%;
 }
 
+/*styling for the mobile view of the webpage, same contents as a desktop view of the webpage,
+but played with different color palettes and small changes*/
 @media (max-width: 400px) {
     nav {
         margin: 0 auto;
