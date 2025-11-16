@@ -1,0 +1,360 @@
+/*Body which contains font, font propreties, background color*/
+body {
+    font-family: "Roboto", "sans-serif";
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "width" 100px;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(232, 224, 221);
+}
+
+/*Wrapper*/
+#wrapper {
+    margin-top: 10px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Header H1 propeties*/
+h1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    padding: 35px;
+
+    margin: 0;
+    padding: 0;
+
+    color: rgb(0, 0, 0);
+    /* Color of the text itself */
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        /* Blue glow */
+        0 0 20px rgb(255, 255, 255),
+        /* Stronger blue glow */
+        0 0 30px rgb(255, 255, 255);
+    /* Even stronger blue glow */
+
+}
+
+/*menu1 propeties*/
+.menu1 {
+    display: inline-flex;
+    gap: 10px;
+    background: rgb(236, 231, 227);
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*menu1 a ref*/
+.menu1 a {
+    font-weight: 400;
+    display: block;
+    position: relative;
+    text-align: justify;
+}
+
+/*hamburger menu properties*/
+.hamburger-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: gray;
+}
+
+.hamburger-menu button .fa-bars {
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+
+
+.titleOne {
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+
+
+}
+
+.titleOne a {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+li a {
+    display: block;
+    color: rgb(180, 0, 0);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555555;
+    color: white;
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*nav propeties*/
+nav {
+    margin-top: 20px;
+    line-height: 30px;
+    display: grid;
+    position: fixed;
+
+
+}
+
+/*nav a ref properties*/
+nav a {
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+    font-weight: bold;
+}
+
+/*nav hover properties */
+nav a:hover {
+    color: rgb(145, 39, 138);
+}
+
+/*menuI properties */
+.menuI {
+    text-align: right;
+}
+
+.menuI_active {
+    text-align: right;
+    color: rgb(0, 0, 0);
+}
+
+section {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+article p:last-child {
+    margin-bottom: 80px;
+}
+
+/*footer properties properties */
+footer {
+    margin-top: 30px;
+    min-height: 30px;
+    font-size: lighter;
+    text-align: right;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+/*books properties */
+.books {
+    display: grid;
+    grid-template-columns: repeat (12, 1fr);
+    max-width: 100%;
+    gap: 16px;
+
+}
+
+.hover-text {
+    opacity: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background-color: #000;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+.books img {
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: 2px solid black;
+}
+
+.books figure {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.my-box {
+    width: 1000px;
+    height: 450px;
+    border: none;
+    margin: 30px auto;
+    border-radius: 8px;
+
+}
+
+.books figure:hover .hover-text {
+    display: block;
+    opacity: 1;
+}
+
+.books figure:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/*im (images) properties */
+
+/*storypicc properties (for the image in story.html*/
+
+
+/*media properties (for when the user views the webpage on a mobile device. it contains all 
+the same elements as above, but we added it in the @media portion as well as did some small
+altertations*/
+@media (max-width: 1024px) {
+
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .menu1 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(232, 224, 221);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .menu1 a {
+        padding: 20px;
+    }
+
+    .menu1 a,
+    .menu1 a:hover {
+        text-decoration: block;
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2em;
+        color: rgb(0, 0, 0);
+    }
+
+    .menu-deployed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(232, 224, 221);
+        z-index: 1000;
+        padding-top: 50px;
+    }
+
+    button {
+        border-width: 0px;
+        background-color: rgb(232, 224, 221);
+    }
+
+    nav {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        line-height: relative;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 4px solid #000;
+        background: #000;
+        z-index: 100;
+        color: rgb(232, 224, 221);
+    }
+
+    nav a {
+        color: rgb(0, 0, 0);
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    #wrapper {
+        margin-top: 50px;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    footer {
+        margin-top: 70px;
+        font-size: 10px;
+    }
+
+
+
+
+
+}
