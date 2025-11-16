@@ -42,7 +42,7 @@ let eyee = {
 
 }
 
-let binarys = [10];
+let binarys = [];
 
 
 
@@ -53,8 +53,9 @@ function setup() {
     canvas.style('z-index', '-1');
     background(175);
 
-    binaryOne = createBinary()
-
+    for (let i = 0; i < 50; i++) {
+        binarys.push(createBinary());
+    }
 }
 
 
@@ -86,8 +87,14 @@ function createBinary() {
 function draw() {
     background(26, 19, 59);
 
-    let binary = createBinary();
-    binarys.push(binary);
+
+
+    for (let binary of binarys) {
+        moveBinary(binary);
+        bounceBinary(binary);
+        drawBinary(binary);
+    }
+
 
 
 
@@ -137,6 +144,37 @@ function eye() {
 
 }
 
-function binary() {
 
+function moveBinary(binary) {
+    binary.x += binary.velocity.x;
+    binary.y += binary.velocity.y;
 }
+
+
+function bounceBinary(binary) {
+    // Check if the ball has reached the left or right
+    const bounceX = (binary.x > width || binary.x < 0);
+    // Check if the ball has reached the top or bottom
+    const bounceY = (binary.y > height || binary.y < 0);
+
+    // Handle bouncing horizontally
+    if (bounceX) {
+        binary.velocity.x *= -1;
+    }
+    // Handle bouncing vertically
+    if (bounceY) {
+        binary.velocity.y *= -1;
+    }
+}
+
+
+function drawBinary(binary) {
+    push();
+    noStroke();
+    fill(binary.fill.r, binary.fill.g, binary.fill.b, binary.fill.a);
+    textSize(20);
+    text("1 0 1 0 1 0 1 0 1 0", binary.x, binary.y,)
+    pop();
+}
+
+
