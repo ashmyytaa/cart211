@@ -42,6 +42,8 @@ let eyee = {
 
 }
 
+let binarys = [10];
+
 
 
 
@@ -51,15 +53,44 @@ function setup() {
     canvas.style('z-index', '-1');
     background(175);
 
+    binaryOne = createBinary()
+
+}
+
+
+
+function createBinary() {
+
+    let binary = {
+        x: random(0, width),
+        y: random(0, height),
+        size: 20,
+
+        fill: {
+            r: random(0, 255),
+            g: random(50, 100),
+            b: random(100, 255),
+            a: random(200, 255),
+        },
+
+        velocity: {
+            x: random(-5, 5),
+            y: random(-5, 5)
+        }
+    };
+
+    return binary;
 }
 
 
 function draw() {
     background(26, 19, 59);
 
+    let binary = createBinary();
+    binarys.push(binary);
 
 
-    binary();
+
     eye();
 
 
@@ -107,24 +138,5 @@ function eye() {
 }
 
 function binary() {
-    let x = random(0, width);
-    let startY = random(0, height);
-    let diameter = 20;
-    let speed = 0.0001;
 
-
-    push()
-    fill(191, 10, 109);
-    noStroke();
-    drawingContext.shadowBlur = 50; // features that i found online that adds glow to a text
-    drawingContext.shadowColor = color(255, 255, 255);
-    textSize(40);
-
-
-    for (let i = 0; i < 20; i++) {
-        let y = startY + i * diameter + frameCount * speed;;
-        text("1 0 1 0", x, y);
-    }
-
-    pop();
 }
