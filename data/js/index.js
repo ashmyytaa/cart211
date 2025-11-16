@@ -171,6 +171,8 @@ function bounceBinary(binary) {
 function drawBinary(binary) {
     push();
     noStroke();
+    drawingContext.shadowBlur = 4; // Size of the blur
+    drawingContext.shadowColor = "white"; // Color of the glow
     fill(binary.fill.r, binary.fill.g, binary.fill.b, binary.fill.a);
     textSize(20);
     text("1 0 1 0 1 0 1 0 1 0", binary.x, binary.y,)

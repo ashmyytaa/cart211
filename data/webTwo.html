@@ -10,10 +10,11 @@
     <meta property="og:title" content="Humans of New York">
     <meta property="og:description" content="Humans of New York">
     <!--Author and Copyright-->
-    <meta name="author" content="Ashmitha Kanagiah">
+    <meta name="author" content="Your Name">
     <meta name="copyright" content="copyright Ashmitha Kanagiah, Student Project, Fall 2025">
     <!--Title-->
     <title>Humans of New York</title>
+
     <!-- Library script(s) -->
 
     <!-- p5.min.js is the main p5 library -->
@@ -22,8 +23,7 @@
     <script src="js/libraries/p5.sound.min.js"></script>
 
     <!-- My script(s) -->
-    <script src="js/script.js"></script>
-
+    <script src="js/webTwo.js"></script>
     <!--External Stylesheet-->
     <link rel="stylesheet" href="default.css">
     <!--Google Font-->
@@ -38,6 +38,7 @@
 <!--Body-->
 
 <body>
+
     <div id="wrapper">
         <!--Header-->
         <header>
@@ -59,7 +60,6 @@
                     </ul>
 
                 </div>
-
                 <!--Hamburger menu button for mobile version-->
                 <div class="hamburger-menu">
                     <button>
@@ -69,51 +69,34 @@
             </nav>
         </header>
 
+        <section>
+            <article>
+                <!--Header 1-->
+                <h1>
+                    <center>Ms. America Pageant</center>
+                </h1>
 
 
-        <!--Header 1-->
-        <h1>
-            <center>WHAT DO YOU KNOW ABOUT DATA?</center>
-
-        </h1>
-
-
-
-        <div class="titleOne">
-            <a href="webTwo.html" title="Go to W3Schools HTML section">Click here to start.</a>
-        </div>
-
-
-
-        <div class="box"></div>
-
-
-
-
-
-
-
-
-    </div>
-
-    <footer>
-        <!--Footer-->
-        <div class="social">
-            <!--Social Media Icon-->
-            <div class="icons-wrapper">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-pinterest"></a>
-                <a href="#" class="fa fa-snapchat-ghost"></a>
+            </article>
+        </section>
+        <footer>
+            <!--Footer-->
+            <div class="social">
+                <!--Social Media Icon-->
+                <div class="icons-wrapper">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-snapchat-ghost"></a>
+                </div>
             </div>
-        </div>
-        <small>
-            This website was created as part of a student project. All content and design are copyright: Ashmitha
-            Kanagiah,
-            2025
-        </small>
-    </footer>
+            <small>
+                This website was created as part of a student project. All content and design are copyright Ashmitha
+                Kanagiah,
+                2025
+            </small>
+        </footer>
 
     </div>
     <script>
@@ -122,12 +105,12 @@
             const closeButton = document.querySelector('.close-menu');
             const menu1 = document.querySelector('.menu1');
 
-            //Handling menu opening
+            // Handling menu opening
             hamburgerButton.addEventListener('click', () => {
                 menu1.classList.add('menu-deployed');
             });
 
-            //Handling menu closing
+            // Handling menu closing
             closeButton.addEventListener('click', () => {
                 menu1.classList.remove('menu-deployed');
             });
