@@ -45,6 +45,29 @@ h1 {
 
 }
 
+
+h2 {
+    font-weight: 400;
+    font-size: 70px;
+
+    position: relative;
+    /* allows left/right adjustments */
+    left: 50px;
+    top: 100px;
+
+
+
+    color: rgb(0, 0, 0);
+    /* Color of the text itself */
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        /* Blue glow */
+        0 0 20px rgb(255, 255, 255),
+        /* Stronger blue glow */
+        0 0 30px rgb(255, 255, 255);
+    /* Even stronger blue glow */
+
+}
+
 /*menu1 propeties*/
 .menu1 {
     display: inline-flex;
@@ -94,7 +117,7 @@ h1 {
     /* vertical */
     margin-top: 250px;
     margin-left: 160px;
-
+    font-size: 50;
 
 }
 
@@ -104,7 +127,35 @@ h1 {
     text-decoration: none;
 
 
+
 }
+
+.titleTwo {
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    margin-top: 140px;
+    margin-left: 160px;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.titleTwo a {
+
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    border: #ffffff;
+
+    border-style: dashed;
+    border-width: 1px;
+
+
+}
+
 
 
 ul {

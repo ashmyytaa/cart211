@@ -42,7 +42,7 @@ let eyee = {
 
 }
 
-let binarys = [];
+
 
 
 
@@ -53,52 +53,20 @@ function setup() {
     canvas.style('z-index', '-1');
     background(175);
 
-    for (let i = 0; i < 50; i++) {
-        binarys.push(createBinary());
-    }
+
+
+
 }
 
 
 
-function createBinary() {
-
-    let binary = {
-        x: random(0, width),
-        y: random(0, height),
-        size: 20,
-
-        fill: {
-            r: random(0, 255),
-            g: random(50, 100),
-            b: random(100, 255),
-            a: random(200, 255),
-        },
-
-        velocity: {
-            x: random(-5, 5),
-            y: random(-5, 5)
-        }
-    };
-
-    return binary;
-}
 
 
 function draw() {
     background(26, 19, 59);
 
-
-
-    for (let binary of binarys) {
-        moveBinary(binary);
-        bounceBinary(binary);
-        drawBinary(binary);
-    }
-
-
-
-
     eye();
+
 
 
 }
@@ -145,38 +113,7 @@ function eye() {
 }
 
 
-function moveBinary(binary) {
-    binary.x += binary.velocity.x;
-    binary.y += binary.velocity.y;
-}
 
 
-function bounceBinary(binary) {
-    // Check if the ball has reached the left or right
-    const bounceX = (binary.x > width || binary.x < 0);
-    // Check if the ball has reached the top or bottom
-    const bounceY = (binary.y > height || binary.y < 0);
-
-    // Handle bouncing horizontally
-    if (bounceX) {
-        binary.velocity.x *= -1;
-    }
-    // Handle bouncing vertically
-    if (bounceY) {
-        binary.velocity.y *= -1;
-    }
-}
-
-
-function drawBinary(binary) {
-    push();
-    noStroke();
-    drawingContext.shadowBlur = 4; // Size of the blur
-    drawingContext.shadowColor = "white"; // Color of the glow
-    fill(binary.fill.r, binary.fill.g, binary.fill.b, binary.fill.a);
-    textSize(20);
-    text("1 0 1 0 1 0 1 0 1 0", binary.x, binary.y,)
-    pop();
-}
 
 
