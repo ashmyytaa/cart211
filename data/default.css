@@ -68,6 +68,17 @@ h2 {
 
 }
 
+h3 {
+
+    font-weight: 200;
+    font-size: 50px;
+
+    position: relative;
+    /* allows left/right adjustments */
+    left: 50px;
+    top: 5px;
+}
+
 /*menu1 propeties*/
 .menu1 {
     display: inline-flex;
@@ -157,6 +168,41 @@ h2 {
 }
 
 
+.accept {
+    display: flex;
+    display: flex;
+
+    gap: 350px;
+
+    justify-content: left;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    margin-top: 120px;
+    margin-left: 300px;
+    font-size: 50px;
+    padding-bottom: 15%;
+
+
+}
+
+.accept a {
+
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    border: #ffffff;
+    font-weight: 300;
+
+
+
+}
+
+
+
+
+
+
 
 ul {
     list-style-type: none;
@@ -181,14 +227,6 @@ li a:hover {
 
 
 
-.box {
-    width: 400px;
-    height: 250px;
-    background-color: transparent;
-    /* invisible */
-    border: none;
-
-}
 
 /*nav propeties*/
 nav {
