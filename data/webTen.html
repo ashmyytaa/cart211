@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta Description for SEO-->
+    <meta name="description" content="Humans of New York">
+    <!--Open Graph for Social Sharing-->
+    <meta property="og:title" content="Humans of New York">
+    <meta property="og:description" content="Humans of New York">
+    <!--Author and Copyright-->
+    <meta name="author" content="Your Name">
+    <meta name="copyright" content="copyright Ashmitha Kanagiah, Student Project, Fall 2025">
+    <!--Title-->
+    <title>Data Awarness</title>
+
+    <!-- Library script(s) -->
+
+    <!-- p5.min.js is the main p5 library -->
+    <script src="js/libraries/p5.min.js"></script>
+    <!-- p5.sound.min.js allows us to use sound -->
+    <script src="js/libraries/p5.sound.min.js"></script>
+
+    <!-- My script(s) -->
+    <script src="js/webTen.js"></script>
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="default.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Social Media Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!--Body-->
+
+<body>
+
+    <div id="wrapper">
+        <!--Header-->
+        <header>
+            <!--Navigation-->
+            <nav>
+                <div class="menu1">
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="webTwo.html">One</a></li>
+                        <li><a href="webThree.html">Two</a></li>
+                        <li><a href="webFour.html">Three</a></li>
+                        <li><a href="webFive.html">Four</a></li>
+                        <li><a href="webSix.html">Five</a></li>
+                        <li><a href="webSeven.html">Six</a></li>
+                        <li><a href="webEight.html">Seven</a></li>
+                        <li><a href="webNine.html">Eight</a></li>
+                        <li><a href="webTen.html">Nine</a></li>
+                    </ul>
+                </div>
+                <!--Hamburger menu button for mobile version-->
+                <div class="hamburger-menu">
+                    <button>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <!--Header 1-->
+        <h3>
+
+
+            <br>
+
+            <center>You are always being watched.</center>
+
+        </h3>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+        <div class="box"></div>
+
+
+
+
+        <footer>
+            <!--Footer-->
+            <div class="social">
+                <!--Social Media Icon-->
+                <div class="icons-wrapper">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-snapchat-ghost"></a>
+                </div>
+            </div>
+            <small>
+                This website was created as part of a student project. All content and design are copyright Ashmitha
+                Kanagiah,
+                2025
+            </small>
+        </footer>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Handling menu opening
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Handling menu closing
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+</body>
+
+</html>
