@@ -70,8 +70,9 @@ h2 {
 
 h3 {
 
-    font-weight: 200;
+    font-weight: 500;
     font-size: 50px;
+    color: rgb(255, 255, 255);
 
     position: relative;
     /* allows left/right adjustments */
@@ -167,10 +168,40 @@ h3 {
 
 }
 
+.titleSix {
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    margin-top: 140px;
+    margin-left: 160px;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+.titleSix a {
+
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    border: #ffffff;
+
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        /* Blue glow */
+        0 0 20px rgb(255, 255, 255),
+        /* Stronger blue glow */
+        0 0 30px rgb(255, 255, 255);
+    /* Even stronger blue glow */
+
+
+}
+
 
 .accept {
     display: flex;
-    display: flex;
+
 
     gap: 350px;
 
@@ -194,8 +225,31 @@ h3 {
     border: #ffffff;
     font-weight: 300;
 
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        /* Blue glow */
+        0 0 20px rgb(255, 255, 255),
+        /* Stronger blue glow */
+        0 0 30px rgb(255, 255, 255);
+    /* Even stronger blue glow */
 
+}
 
+.accepted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    font-size: 50px;
+    padding-bottom: 15%;
+
+}
+
+.accepted a {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    border: #ffffff;
+    font-weight: 300;
 }
 
 
