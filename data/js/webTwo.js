@@ -7,23 +7,23 @@ let grid = [];
 let size = undefined; //size of my text that will be defined later
 let space = 2; //space between my texts
 
-function windowResized() {
+function windowResized() { // this is too resize the canvas whenever the browser window gets resized/gets minimized
     resizeCanvas(windowWidth, windowHeight);
 }
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
-    canvas.position(0, 0);
-    canvas.style("z-index", "-1");
+    canvas = createCanvas(windowWidth, windowHeight); //canvas size equals to the browser window's size
+    canvas.position(0, 0); //delimits where the canvas starts (which is position 0,0)
+    canvas.style("z-index", "-1"); //this is to put the javascript canvas in the background, behind all the html and css
 
-    gridd();
+    gridd(); //calls the function grid that creates the grid where the numbers will be placed. its in setup because it gets called only once unlike the draw() which gets called each frame
 }
 
 
 function draw() {
     background(0, 4, 53);
 
-    binary();
+    binary(); //calls the function binary() which displays my numbers + the animation that comes with it
 }
 
 

@@ -3,8 +3,8 @@
 
 
 var canvas;
-
-let terms = `This Agreement governs your use of Apple’s services (“Services”) through which you can buy, get, license, rent or subscribe to content, Apps (as defined below), and other in-app services (collectively, “Content”). Content may be offeredmo
+//variable conditions that contains the text for my simulation of terms and conditions
+let conditions = `This Agreement governs your use of Apple’s services (“Services”) through which you can buy, get, license, rent or subscribe to content, Apps (as defined below), and other in-app services (collectively, “Content”). Content may be offeredmo
 through the Services by Apple or a third party. Examples of Services include, where available, App Store, Subscriptions (as defined below), Apple Arcade,Apple Books, Apple Fitness+, Apple Games, Game Center,Apple Music,more more more data more data mo
 Apple News, Apple One, Apple Podcasts, Apple Sports, Apple TV, iTunes, and Shazam. Our Services are available for your use in your country or territory of residence (“Home Country”). By creating an account for use of the-data from apple and their data
 Services in a particular country or territory you are specifying it as you Home Country. To use our Services, you need compatible hardware, software (latest version recommended and sometimes required) and Internet access-data from apple and their data
@@ -131,40 +131,42 @@ MAGES FOR LOSS OF PROFITS, CORRUPTION OR LOSS OF DATA, FAILURE TO TRANSMIT OR RE
 OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE LICENSED APPLICATION, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, OR OTHERWISE) AND EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTION
 S DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU. In no event shall Licensor’s total liability to you for all damages (other than as may ber
 equired by applicable law in cases involving personal injury) exceed the amount of two hundred and fifty dollars ($250.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose.`;
+// Terms and Conditions from https://www.apple.com/ca/legal/internet-services/itunes/ca/terms.html . I used it as text reference for my Webpage 4.
+
+let lines; //lines variable
+let y; //y-variable
 
 
-let lines;
-let y;
-
-
-function windowResized() {
+function windowResized() {  // this is too resize the canvas whenever the browser window gets resized/gets minimized
     resizeCanvas(windowWidth, windowHeight);
 }
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
-    canvas.position(0, 0)
-    canvas.style('z-index', '-1');
+    canvas = createCanvas(windowWidth, windowHeight); //canvas size equals to the browser window's size
+    canvas.position(0, 0)  //delimits where the canvas starts (which is position 0,0)
+    canvas.style('z-index', '-1'); //this is to put the javascript canvas in the background, behind all the html and css
     background(175);
 
 
-    lines = terms.split('\n');
-    y = height; // Start from bottom
+    lines = conditions.split('\n'); // this divides our condition texts into lines, split means it breaks it into lines. /n means new line
+    y = height; // this assigns the value of height to the y variable
 
 }
 
 
 function draw() {
-    background(26, 19, 59);
+    background(26, 19, 59); //navy blue background
+
     for (let i = 0; i < lines.length; i++) {
-        fill(255, 255, 255, 90)
-        text(lines[i], 10, y + i * 20); // 20px per line
+        push(); //draws the line of text 
+        fill(255, 255, 255, 90);
+        text(lines[i], 5, y + i * 20); //which also adds the spacing between each line which is 20
+        pop();
     }
 
-    y -= 1; // Speed of scroll (increase for faster)
+    y -= 1.5; // speed of how fast the text will scroll from bottom to top 
 
-    // Reset once text scrolls out of view
-    if (y < -lines.length * 20) {
+    if (y < -lines.length * 20) { //resets the canvas with the scrolling of our text when all the text has reached the top
         y = height;
     }
 
