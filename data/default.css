@@ -7,6 +7,8 @@ body {
     font-variation-settings: "width" 100px;
     padding: 0;
     margin: 0;
+
+
     background-color: rgb(232, 224, 221);
 }
 
@@ -43,14 +45,14 @@ h1 {
 /*Header H2 propeties*/
 h2 {
     font-weight: 400;
-    font-size: 35px;
+    font-size: 60px;
 
     position: relative;
     /* Moves it from the left side*/
 
 
     text-align: center;
-    margin: 3vh auto;
+    margin: 10vh auto;
     /* Moves it from the left side as well as the top side*/
 
 
@@ -68,19 +70,18 @@ h2 {
 
 /*Header H3 propeties*/
 h3 {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 50px;
     color: rgb(255, 255, 255);
 
-    font-weight: 400;
-    font-size: 35px;
+
 
     position: relative;
     /* Moves it from the left side*/
 
 
     text-align: center;
-    margin: 3vh auto;
+    margin: 10vh auto;
 
     /* Color of the text */
     color: rgb(0, 0, 0);
@@ -93,19 +94,13 @@ h3 {
 
 /*Header H4 propeties*/
 h4 {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 50px;
     color: rgb(255, 255, 255);
 
-    font-weight: 400;
-    font-size: 35px;
-
     position: relative;
-    /* Moves it from the left side*/
-
-
     text-align: center;
-    margin: 3vh auto;
+    margin: 6vh auto;
 
     /* Color of the text */
     color: rgb(0, 0, 0);
@@ -115,6 +110,45 @@ h4 {
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
 }
+
+/*Header H5 propeties*/
+h5 {
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+
+    position: relative;
+    text-align: center;
+    margin: 6vh auto;
+
+    /* Color of the text */
+    color: rgb(0, 0, 0);
+
+    /* Text shadow property adds glow to my text */
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255);
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+
+    position: relative;
+    text-align: center;
+    margin: 20vh auto;
+
+    /* Color of the text */
+    color: rgb(0, 0, 0);
+
+    /* Text shadow property adds glow to my text */
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255);
+}
+
+/* Color of the text */
 
 /*menu1 propeties*/
 .menu1 {
@@ -162,7 +196,7 @@ h4 {
     justify-content: center;
     align-items: center;
     margin-top: 37vh;
-    margin-left: 23vh;
+    margin-left: 17vh;
     font-size: 1rem;
 
 }
@@ -180,6 +214,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 20vh;
     margin-left: 23vh;
     font-size: 2rem;
@@ -229,8 +264,9 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
-    margin-left: 23vh;
+    text-align: center;
+    margin-top: 30vh;
+
     font-size: 2rem;
 
 }
@@ -249,15 +285,40 @@ h4 {
 }
 
 
+.titleEight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30vh;
+
+    font-size: 2rem;
+
+}
+
+/* Title seven link properties*/
+.titleEight a {
+
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    border: #ffffff;
+
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255);
+}
+
+
 /* Class accept properties*/
 .accept {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 20vh;
-    margin-left: 23vh;
     font-size: 3rem;
-    gap: 20rem;
+    gap: 15rem;
 }
 
 /*Class accept link properties*/
@@ -280,8 +341,8 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 20vh;
-    margin-left: 23vh;
     font-size: 2rem;
 
 }
@@ -329,10 +390,17 @@ li a:hover {
 
 /*nav propeties*/
 nav {
-    margin-top: 20px;
-    line-height: 30px;
-    display: grid;
+
+    line-height: 2rem;
     position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    pointer-events: none;
+
+    margin-top: 0;
+
 }
 
 
@@ -341,6 +409,10 @@ nav a {
     text-decoration: none;
     color: rgb(223, 223, 223);
     font-weight: bold;
+
+    pointer-events: auto;
+
+
 }
 
 
