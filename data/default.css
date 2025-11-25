@@ -23,61 +23,84 @@ body {
 
 /*Header H1 propeties*/
 h1 {
-
-
     font-weight: 400;
     font-size: 35px;
 
     position: relative;
-    /* allows left/right adjustments */
+    /* Moves it from the left side*/
     left: 50px;
 
 
-
+    /* Color of the text  */
     color: rgb(0, 0, 0);
-    /* Color of the text itself */
-    text-shadow: 0 0 10px rgb(255, 255, 255),
-        /* Blue glow */
-        0 0 20px rgb(255, 255, 255),
-        /* Stronger blue glow */
-        0 0 30px rgb(255, 255, 255);
-    /* Even stronger blue glow */
 
+
+    /* Text shadow property adds glow to my text */
+    text-shadow: 0 0 30px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255);
 }
 
-
+/*Header H2 propeties*/
 h2 {
     font-weight: 400;
     font-size: 70px;
 
     position: relative;
-    /* allows left/right adjustments */
+    /* Moves it from the left side as well as the top side*/
     left: 50px;
     top: 100px;
 
 
-
+    /* Color of the text */
     color: rgb(0, 0, 0);
-    /* Color of the text itself */
+
+    /* Text shadow property adds glow to my text */
     text-shadow: 0 0 10px rgb(255, 255, 255),
-        /* Blue glow */
         0 0 20px rgb(255, 255, 255),
-        /* Stronger blue glow */
         0 0 30px rgb(255, 255, 255);
-    /* Even stronger blue glow */
+
 
 }
 
+/*Header H3 propeties*/
 h3 {
-
     font-weight: 500;
     font-size: 50px;
     color: rgb(255, 255, 255);
 
     position: relative;
-    /* allows left/right adjustments */
+    /* Moves it from the left side as well as the top side*/
     left: 50px;
-    top: 5px;
+    top: 60px;
+
+    /* Color of the text */
+    color: rgb(0, 0, 0);
+
+    /* Text shadow property adds glow to my text */
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255);
+}
+
+/*Header H4 propeties*/
+h4 {
+    font-weight: 500;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+
+    position: relative;
+    /* Moves it from the left side as well as the top side*/
+    left: 50px;
+    top: 60px;
+
+    /* Color of the text */
+    color: rgb(0, 0, 0);
+
+    /* Text shadow property adds glow to my text */
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255);
 }
 
 /*menu1 propeties*/
@@ -120,7 +143,7 @@ h3 {
 }
 
 
-
+/* Title one properties*/
 .titleOne {
     display: flex;
     justify-content: center;
@@ -133,15 +156,14 @@ h3 {
 
 }
 
+/* Title one link properties*/
 .titleOne a {
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
-
-
-
 }
 
+/* Title two properties*/
 .titleTwo {
     display: flex;
     justify-content: center;
@@ -155,19 +177,18 @@ h3 {
 
 }
 
+/* Title two link properties*/
 .titleTwo a {
 
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
-
     border-style: dashed;
     border-width: 1px;
-
-
 }
 
+/* Title six properties*/
 .titleSix {
     display: flex;
     justify-content: center;
@@ -178,9 +199,9 @@ h3 {
     margin-left: 160px;
     font-size: 30px;
     font-weight: 400;
-
 }
 
+/* Title six link properties*/
 .titleSix a {
 
     color: rgb(255, 255, 255);
@@ -188,16 +209,16 @@ h3 {
     text-decoration: none;
     border: #ffffff;
 
-    text-shadow: 0 0 10px rgb(255, 255, 255),
-        /* Blue glow */
-        0 0 20px rgb(255, 255, 255),
-        /* Stronger blue glow */
-        0 0 30px rgb(255, 255, 255);
-    /* Even stronger blue glow */
 
+
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255),
 
 }
 
+
+/* Title seven properties*/
 .titleSeven {
     display: flex;
     justify-content: center;
@@ -211,6 +232,7 @@ h3 {
 
 }
 
+/* Title seven link properties*/
 .titleSeven a {
 
     color: rgb(255, 255, 255);
@@ -219,22 +241,15 @@ h3 {
     border: #ffffff;
 
     text-shadow: 0 0 10px rgb(255, 255, 255),
-        /* Blue glow */
         0 0 20px rgb(255, 255, 255),
-        /* Stronger blue glow */
         0 0 30px rgb(255, 255, 255);
-    /* Even stronger blue glow */
-
-
 }
 
 
+/* Class accept properties*/
 .accept {
     display: flex;
-
-
     gap: 350px;
-
     justify-content: left;
     /* horizontal */
     align-items: center;
@@ -244,9 +259,9 @@ h3 {
     font-size: 50px;
     padding-bottom: 15%;
 
-
 }
 
+/*Class accept link properties*/
 .accept a {
 
     color: rgb(255, 255, 255);
@@ -256,38 +271,40 @@ h3 {
     font-weight: 300;
 
     text-shadow: 0 0 10px rgb(255, 255, 255),
-        /* Blue glow */
         0 0 20px rgb(255, 255, 255),
-        /* Stronger blue glow */
         0 0 30px rgb(255, 255, 255);
-    /* Even stronger blue glow */
-
 }
 
+
+/* Class accepted properties*/
 .accepted {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 120px;
+    margin-left: 70px;
     font-size: 50px;
     padding-bottom: 15%;
 
 }
 
+/* Class accepted link properties*/
 .accepted a {
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
     font-weight: 300;
+
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255);
 }
 
 
 
 
-
-
-
+/* Ul properties, whicch is the link of all the options to my webpages, through the nav*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -296,6 +313,7 @@ ul {
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* List a link properties*/
 li a {
     display: block;
     color: rgb(180, 0, 0);
@@ -303,13 +321,12 @@ li a {
     text-decoration: none;
 }
 
+/* List a link hover properties*/
 li a:hover {
     background-color: #555555;
     color: white;
     width: 50px;
 }
-
-
 
 
 /*nav propeties*/
@@ -318,9 +335,8 @@ nav {
     line-height: 30px;
     display: grid;
     position: fixed;
-
-
 }
+
 
 /*nav a ref properties*/
 nav a {
@@ -329,31 +345,28 @@ nav a {
     font-weight: bold;
 }
 
+
 /*nav hover properties */
 nav a:hover {
     color: rgb(145, 39, 138);
 }
+
 
 /*menuI properties */
 .menuI {
     text-align: right;
 }
 
+
 .menuI_active {
     text-align: right;
     color: rgb(0, 0, 0);
 }
 
-section {
-    margin-bottom: 30px;
-    text-align: justify;
-}
 
-article p:last-child {
-    margin-bottom: 80px;
-}
 
-/*footer properties properties */
+
+/*footer properties */
 footer {
     margin-top: 30px;
     min-height: 30px;
@@ -362,60 +375,13 @@ footer {
     font-style: italic;
 }
 
+
+/*footer a ref properties */
 footer a {
     text-decoration: none;
     color: darkgray;
 }
 
-/*books properties */
-.books {
-    display: grid;
-    grid-template-columns: repeat (12, 1fr);
-    max-width: 100%;
-    gap: 16px;
-
-}
-
-.hover-text {
-    opacity: 0;
-    position: absolute;
-    bottom: 30px;
-    left: 10px;
-    background-color: #000;
-    padding: 8px;
-    border-radius: 10px;
-    color: white;
-    transition: opacity 0.3s ease;
-}
-
-.books img {
-    width: 100%;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    border: 2px solid black;
-}
-
-.books figure {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-
-}
-
-
-
-.books figure:hover .hover-text {
-    display: block;
-    opacity: 1;
-}
-
-.books figure:hover img {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
-/*im (images) properties */
-
-/*storypicc properties (for the image in story.html*/
 
 
 /*media properties (for when the user views the webpage on a mobile device. it contains all 

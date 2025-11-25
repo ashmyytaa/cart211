@@ -14,7 +14,6 @@ function setup() {
     canvas.style('z-index', '-1');  //this is to put the javascript canvas in the background, behind all the html and css
     background(175);
 
-
 }
 
 
