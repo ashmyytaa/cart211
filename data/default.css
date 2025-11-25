@@ -12,12 +12,9 @@ body {
 
 /*Wrapper*/
 #wrapper {
-    margin-top: 10px;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
     margin: 0;
-    padding: 0;
 }
 
 
@@ -28,8 +25,10 @@ h1 {
 
     position: relative;
     /* Moves it from the left side*/
-    left: 50px;
 
+
+    text-align: center;
+    margin: 3vh auto;
 
     /* Color of the text  */
     color: rgb(0, 0, 0);
@@ -44,12 +43,16 @@ h1 {
 /*Header H2 propeties*/
 h2 {
     font-weight: 400;
-    font-size: 70px;
+    font-size: 35px;
 
     position: relative;
+    /* Moves it from the left side*/
+
+
+    text-align: center;
+    margin: 3vh auto;
     /* Moves it from the left side as well as the top side*/
-    left: 50px;
-    top: 100px;
+
 
 
     /* Color of the text */
@@ -69,10 +72,15 @@ h3 {
     font-size: 50px;
     color: rgb(255, 255, 255);
 
+    font-weight: 400;
+    font-size: 35px;
+
     position: relative;
-    /* Moves it from the left side as well as the top side*/
-    left: 50px;
-    top: 60px;
+    /* Moves it from the left side*/
+
+
+    text-align: center;
+    margin: 3vh auto;
 
     /* Color of the text */
     color: rgb(0, 0, 0);
@@ -89,10 +97,15 @@ h4 {
     font-size: 50px;
     color: rgb(255, 255, 255);
 
+    font-weight: 400;
+    font-size: 35px;
+
     position: relative;
-    /* Moves it from the left side as well as the top side*/
-    left: 50px;
-    top: 60px;
+    /* Moves it from the left side*/
+
+
+    text-align: center;
+    margin: 3vh auto;
 
     /* Color of the text */
     color: rgb(0, 0, 0);
@@ -147,12 +160,10 @@ h4 {
 .titleOne {
     display: flex;
     justify-content: center;
-    /* horizontal */
     align-items: center;
-    /* vertical */
-    margin-top: 250px;
-    margin-left: 160px;
-    font-size: 50;
+    margin-top: 37vh;
+    margin-left: 23vh;
+    font-size: 1rem;
 
 }
 
@@ -165,15 +176,13 @@ h4 {
 
 /* Title two properties*/
 .titleTwo {
+
     display: flex;
     justify-content: center;
-    /* horizontal */
     align-items: center;
-    /* vertical */
-    margin-top: 140px;
-    margin-left: 160px;
-    font-size: 30px;
-    font-weight: 400;
+    margin-top: 20vh;
+    margin-left: 23vh;
+    font-size: 2rem;
 
 }
 
@@ -192,13 +201,10 @@ h4 {
 .titleSix {
     display: flex;
     justify-content: center;
-    /* horizontal */
     align-items: center;
-    /* vertical */
-    margin-top: 140px;
-    margin-left: 160px;
-    font-size: 30px;
-    font-weight: 400;
+    margin-top: 20vh;
+    margin-left: 23vh;
+    font-size: 2rem;
 }
 
 /* Title six link properties*/
@@ -222,13 +228,10 @@ h4 {
 .titleSeven {
     display: flex;
     justify-content: center;
-    /* horizontal */
     align-items: center;
-    /* vertical */
-    margin-top: 175px;
-    margin-left: 160px;
-    font-size: 30px;
-    font-weight: 400;
+    margin-top: 20vh;
+    margin-left: 23vh;
+    font-size: 2rem;
 
 }
 
@@ -249,16 +252,12 @@ h4 {
 /* Class accept properties*/
 .accept {
     display: flex;
-    gap: 350px;
-    justify-content: left;
-    /* horizontal */
+    justify-content: center;
     align-items: center;
-    /* vertical */
-    margin-top: 120px;
-    margin-left: 300px;
-    font-size: 50px;
-    padding-bottom: 15%;
-
+    margin-top: 20vh;
+    margin-left: 23vh;
+    font-size: 3rem;
+    gap: 20rem;
 }
 
 /*Class accept link properties*/
@@ -281,10 +280,9 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px;
-    margin-left: 70px;
-    font-size: 50px;
-    padding-bottom: 15%;
+    margin-top: 20vh;
+    margin-left: 23vh;
+    font-size: 2rem;
 
 }
 
@@ -352,16 +350,6 @@ nav a:hover {
 }
 
 
-/*menuI properties */
-.menuI {
-    text-align: right;
-}
-
-
-.menuI_active {
-    text-align: right;
-    color: rgb(0, 0, 0);
-}
 
 
 

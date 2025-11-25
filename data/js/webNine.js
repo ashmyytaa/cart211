@@ -21,11 +21,13 @@ function setup() {
 
 function draw() {
     background(26, 19, 59);
-    // Fade out and display all the "ACCEPT" texts
+
     for (let a of accepts) {
+        push();
         fill(217, 1, 102, a.alpha);
         textSize(a.size);
         text("ACCEPT", a.x, a.y);
+        pop();
 
         // Movement & fade
         a.x += a.vx;
@@ -40,7 +42,7 @@ function draw() {
 }
 
 function mouseMoved() {
-    // Spawn multiple "ACCEPT" per movement
+
     for (let i = 0; i < 6; i++) {
         accepts.push({
             x: mouseX + random(-10, 10),

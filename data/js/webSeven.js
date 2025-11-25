@@ -26,44 +26,53 @@ function setup() {
 function draw() {
     background(26, 19, 59);
 
-    travel();
+    travel(); //calls the travel function where the functionalitie of our animation is in
 }
 
 
 function travel() {
-    let startX = width;           // start on the right
-    let startY = height / 2;
-    let endX = 0;                 // end on the left
-    let endY = height / 2;
-    let dashLength = 20;
-    let gapLength = 10;
-    let speed = 3;
+    let beginx = 0;  // starts at left end        
+    let beginy = height / 2; //y-position is at the middle of the canvas when it starts
+    let closex = width; // ends at the right end
+    let closey = height / 2; // y-position is at the middle of canvas when it ends
 
-    let lineLength = dist(startX, startY, endX, endY);
+    let dash = 30; //size/width of our dash wish is 30
+    let gap = 20; // gap between each dash lines
+    let speed = 5; //speed at which frequency our dashes move 
+    let distance = 0; //initialize our distance
 
-    // Draw dashes along the line up to current progress
-    let distance = 0;
-    while (distance < progress) {
-        let t1 = distance / lineLength;
-        let t2 = min((distance + dashLength) / lineLength, 1);
 
-        let x1 = lerp(startX, endX, t1);
-        let y1 = lerp(startY, endY, t1);
-        let x2 = lerp(startX, endX, t2);
-        let y2 = lerp(startY, endY, t2);
+    let dashLine = dist(beginx, beginy, closex, closey); //calculates the distance from left to right of our points
 
+
+
+    while (distance < progress) { //while loop that checks whether the distance is less than the progress, to then execute its tasks
+
+        let t1 = distance / dashLine;
+        let t2 = min((distance + dash) / dashLine, 1);
+
+        let x1 = lerp(beginx, closex, t1);  //using lerp() to create my movements
+        let y1 = lerp(beginy, closey, t1);
+        let x2 = lerp(beginx, closex, t2);
+        let y2 = lerp(beginy, closey, t2);
+
+
+        //draws our line
+        push();
+        noFill();
         stroke(217, 1, 102);
         strokeWeight(3);
         line(x1, y1, x2, y2);
+        pop();
 
-        distance += dashLength + gapLength;
+        distance += dash + gap; //adds the dash + its gap to the distance variable to keep track of the overal length
     }
 
-    // Move the dashes along the line
-    progress += speed;
 
-    // Reset when reaching the end
-    if (progress > lineLength) {
+    progress += speed; //adds the speed to the progress varaible to see how much speed it has gone through
+
+
+    if (progress > dashLine) { //this resets the progress to zero if it has gone over the horizontal diatance of the line (from left to right of the canvas)
         progress = 0;
     }
 }
