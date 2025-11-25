@@ -1,19 +1,21 @@
 
 "use strict";
-let moneyX = [];
-let moneyY = [];
+
+
+let moneyWidth = [];
+let moneyHeight = [];
 let moneyAlpha = [];
 
 var canvas;
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(windowWidth, windowHeight); // this is too resize the canvas whenever the browser window gets resized/gets minimized
 }
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
-    canvas.position(0, 0)
-    canvas.style('z-index', '-1');
+    canvas = createCanvas(windowWidth, windowHeight);  //canvas size equals to the browser window's size
+    canvas.position(0, 0)  //delimits where the canvas starts (which is position 0,0)
+    canvas.style('z-index', '-1'); //this is to put the javascript canvas in the background, behind all the html and css
     background(175);
 
 
@@ -21,36 +23,38 @@ function setup() {
 
 
 function draw() {
-    background(26, 19, 59);
+    background(26, 19, 59); //background color which is navy blue
 
-    spawnMoneySigns();
+    moneySign(); //calls the moneySign() function where belongs all the composition of my animation
 
 }
 
-function spawnMoneySigns() {
-    // Set text properties inside the function
-    textSize(90);
-    textAlign(CENTER, CENTER);
+function moneySign() {
 
-    // Randomly create new $ signs
-    if (random() < 1) {
-        moneyX.push(random(width));
-        moneyY.push(random(height));
-        moneyAlpha.push(255);
-    }
+    //Adds a new money sign at a random position for its width and height
+    moneyWidth.push(random(width));
+    moneyHeight.push(random(height));
+    moneyAlpha.push(255);
 
-    // Draw $ signs and fade them
-    for (let i = moneyX.length - 1; i >= 0; i--) {
+    //This checks the array for all the elements that have been pushed, for the moneyAlpha portion and starts from the end 
+    for (let i = moneyAlpha.length - 1; i >= 0; i--) {
+
+        moneyAlpha[i] -= 2; //this orders the alpha to reduce by 2 each frame, until it completely disapears
+
+        if (moneyAlpha[i] <= 0) { //checks if the fade has completely dissapeared, and if so, remove it from the array
+            moneyWidth.splice(i, 1);
+            moneyHeight.splice(i, 1);
+            moneyAlpha.splice(i, 1);
+
+        }
+
+        //draws the money signs onthe the canvas
+        push();
+        textSize(80);
         fill(217, 1, 102, moneyAlpha[i]);
         noStroke();
-        text('$', moneyX[i], moneyY[i]);
-        moneyAlpha[i] -= 4;
-
-        // Remove fully faded signs
-        if (moneyAlpha[i] <= 0) {
-            moneyX.splice(i, 1);
-            moneyY.splice(i, 1);
-            moneyAlpha.splice(i, 1);
-        }
+        text('$', moneyWidth[i], moneyHeight[i]);
+        pop();
     }
+
 }

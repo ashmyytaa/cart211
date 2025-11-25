@@ -316,14 +316,14 @@ ul {
 /* List a link properties*/
 li a {
     display: block;
-    color: rgb(180, 0, 0);
+    color: rgb(0, 0, 0);
     padding: 8px 16px;
     text-decoration: none;
 }
 
 /* List a link hover properties*/
 li a:hover {
-    background-color: #555555;
+    background-color: #ce359d;
     color: white;
     width: 50px;
 }
@@ -348,7 +348,7 @@ nav a {
 
 /*nav hover properties */
 nav a:hover {
-    color: rgb(145, 39, 138);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -362,7 +362,6 @@ nav a:hover {
     text-align: right;
     color: rgb(0, 0, 0);
 }
-
 
 
 
