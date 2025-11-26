@@ -4,17 +4,17 @@
 
 
 var canvas;
-let particles = [];
+let circles = [];
 let centerX, centerY;
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(windowWidth, windowHeight); // this is too resize the canvas whenever the browser window gets resized/gets minimized
 }
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
-    canvas.position(0, 0)
-    canvas.style('z-index', '-1');
+    canvas = createCanvas(windowWidth, windowHeight); //canvas size equals to the browser window's size
+    canvas.position(0, 0) //delimits where the canvas starts (which is position 0,0)
+    canvas.style('z-index', '-1'); //this is to put the javascript canvas in the background, behind all the html and css
     background(175);
 
     centerX = width / 2;
@@ -31,7 +31,7 @@ function draw() {
     if (frameCount % 2 === 0) {
         let angle = random(TWO_PI);
         let radius = random(300, 500);
-        particles.push({
+        circles.push({
             angle: angle,
             radius: radius,
             angularSpeed: random(0.05, 0.1),
@@ -41,8 +41,8 @@ function draw() {
         });
     }
 
-    for (let i = particles.length - 1; i >= 0; i--) {
-        let p = particles[i];
+    for (let i = circles.length - 1; i >= 0; i--) {
+        let p = circles[i];
 
         // Spin
         p.angle += p.angularSpeed;
@@ -62,7 +62,7 @@ function draw() {
 
         // Remove if invisible or reached center
         if (p.alpha <= 0 || p.radius <= 0) {
-            particles.splice(i, 1);
+            circles.splice(i, 1);
         }
     }
 
