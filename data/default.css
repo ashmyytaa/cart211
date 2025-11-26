@@ -157,6 +157,9 @@ h6 {
     background: rgb(236, 231, 227);
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
+    z-index: 1010;
 }
 
 /*menu1 a ref*/
@@ -165,6 +168,7 @@ h6 {
     display: block;
     position: relative;
     text-align: justify;
+    pointer-events: auto;
 }
 
 /*hamburger menu properties*/
@@ -196,6 +200,11 @@ h6 {
     justify-content: center;
     align-items: center;
     margin-top: 37vh;
+    position: relative;
+
+
+    z-index: 9999;
+    pointer-events: auto;
 
     font-size: 1rem;
 
@@ -206,6 +215,14 @@ h6 {
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
+
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
+
+    pointer-events: auto;
+
+
 }
 
 /* Title two properties*/
@@ -216,6 +233,12 @@ h6 {
     align-items: center;
     text-align: center;
     margin-top: 20vh;
+    position: relative;
+
+
+
+    z-index: 9999;
+    pointer-events: auto;
 
     font-size: 2rem;
 
@@ -228,7 +251,11 @@ h6 {
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
+    pointer-events: auto;
 
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255),
@@ -241,6 +268,10 @@ h6 {
     justify-content: center;
     align-items: center;
     margin-top: 20vh;
+    position: relative;
+    z-index: 100;
+    z-index: 9999;
+    pointer-events: auto;
 
     font-size: 2rem;
 }
@@ -252,7 +283,10 @@ h6 {
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
-
+    pointer-events: auto;
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
 
 
     text-shadow: 0 0 10px rgb(255, 255, 255),
@@ -269,8 +303,11 @@ h6 {
     align-items: center;
     text-align: center;
     margin-top: 30vh;
-
+    position: relative;
+    z-index: 100;
     font-size: 2rem;
+    z-index: 9999;
+    pointer-events: auto;
 
 }
 
@@ -281,7 +318,11 @@ h6 {
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
+    pointer-events: auto;
 
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
@@ -294,8 +335,11 @@ h6 {
     align-items: center;
     text-align: center;
     margin-top: 10vh;
-
+    position: relative;
+    z-index: 100;
     font-size: 2rem;
+    z-index: 9999;
+    pointer-events: auto;
 
 }
 
@@ -306,7 +350,11 @@ h6 {
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
+    pointer-events: auto;
 
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
@@ -321,7 +369,11 @@ h6 {
     text-align: center;
     margin-top: 20vh;
     font-size: 3rem;
+    position: relative;
+    z-index: 100;
     gap: 15rem;
+    z-index: 9999;
+    pointer-events: auto;
 }
 
 /*Class accept link properties*/
@@ -332,7 +384,11 @@ h6 {
     text-decoration: none;
     border: #ffffff;
     font-weight: 300;
+    pointer-events: auto;
 
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
@@ -347,6 +403,10 @@ h6 {
     text-align: center;
     margin-top: 20vh;
     font-size: 2rem;
+    position: relative;
+    z-index: 100;
+    z-index: 9999;
+    pointer-events: auto;
 
 }
 
@@ -357,7 +417,10 @@ h6 {
     text-decoration: none;
     border: #ffffff;
     font-weight: 300;
-
+    pointer-events: auto;
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
@@ -487,10 +550,8 @@ altertations*/
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         z-index: 1500;
-
-        pointer-events: auto;
+        pointer-events: none;
 
     }
 
@@ -548,6 +609,7 @@ altertations*/
 
     .menu1.show {
         display: flex;
+        pointer-events: auto;
 
     }
 
