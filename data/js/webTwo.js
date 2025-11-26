@@ -37,8 +37,6 @@ function gridd() { //function gridd() that sets up the rows and columns all thro
     columns = ceil(width / size); //function ceil rounds number to its nearest whole number to find coloumn numbers
     rows = ceil(height / size); //fucntion ceil that rounds number to its nearest whole nummber to fund row numbers
 
-
-
     for (let y = 0; y < rows; y++) { //for the amount of rows on canvas
         grid[y] = []; //creates row & creates empty array for it
 
@@ -46,14 +44,11 @@ function gridd() { //function gridd() that sets up the rows and columns all thro
             grid[y][x] = floor(random(2)); //gives random number between 0 and 2 and floor rounds that number to nearest whole value 
         }
     }
-
-
 }
 
 function binary() { //function binary() that displays my numbers in random ways 
 
     fill(255, 16, 240);
-
 
     for (let y = 0; y < rows; y++) { //to displau my numbers per row
         for (let x = 0; x < columns; x++) { //to display my numbers per colums
@@ -62,11 +57,8 @@ function binary() { //function binary() that displays my numbers in random ways
                 grid[y][x] = 1 - grid[y][x]; //gives it 0 or 1
             }
 
-
             text(grid[y][x], (x * size) + size / 2, (y * size) + size / 2 //draws the number
             );
         }
     }
-
-
 }

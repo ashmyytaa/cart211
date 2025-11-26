@@ -16,18 +16,13 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight); //canvas size equals to the browser window's size
     canvas.position(0, 0) //delimits where the canvas starts (which is position 0,0)
     canvas.style('z-index', '-1'); //this is to put the javascript canvas in the background, behind all the html and css
-    background(175);
-
     centerX = width / 2; //to delimit the center on thehorizontal way
     centerY = height / 2; //to delimit the center on the vertical way
-
-
 }
 
 
 function draw() {
     background(26, 19, 59); //navy blue bakground for our canvas
-
 
     if (frameCount % 2 === 0) {
         let angle = random(TWO_PI); //random angle within pi/2
@@ -46,12 +41,8 @@ function draw() {
     for (let i = circles.length - 1; i >= 0; i--) {
 
         let circle = circles[i]; //referring to the array
-
-
         circle.angle += circle.speedSpin; //adds spead to our circle
         circle.radius -= circle.speedCenter; //adds spead towards the circle
-
-
         let x = centerX + cos(circle.angle) * circle.radius; //this is what makes ir spin in a rotational movement
         let y = centerY + sin(circle.angle) * circle.radius;
 

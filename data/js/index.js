@@ -42,11 +42,7 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight); //canvas size equals to the browser window's size
     canvas.position(0, 0) //delimits where the canvas starts (which is position 0,0)
     canvas.style('z-index', '-1'); //this is to put the javascript canvas in the background, behind all the html and css
-    background(175);
 }
-
-
-
 
 
 function draw() {

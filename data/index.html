@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!--Meta Description for SEO-->
     <meta name="description" content="Data Awarness">
     <!--Open Graph for Social Sharing-->
@@ -16,15 +15,12 @@
     <!--Title-->
     <title>Data Awarness</title>
     <!-- Library script(s) -->
-
     <!-- p5.min.js is the main p5 library -->
     <script src="js/libraries/p5.min.js"></script>
     <!-- p5.sound.min.js allows us to use sound -->
     <script src="js/libraries/p5.sound.min.js"></script>
-
     <!-- My script(s) -->
     <script src="js/index.js"></script>
-
     <!--External Stylesheet-->
     <link rel="stylesheet" href="default.css">
     <!--Google Font-->
@@ -39,14 +35,15 @@
 <!--Body-->
 
 <body>
+    <!--wrapper-->
     <div id="wrapper">
         <!--Header-->
         <header>
             <!--Navigation-->
             <nav>
+                <!--menu1 which contains my list menu for all my 10 webpages-->
                 <div class="menu1">
                     <span class="close-menu">&times;</span>
-
                     <!--All the links for all the webpages in my website-->
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -60,11 +57,9 @@
                         <li><a href="webNine.html">Eight</a></li>
                         <li><a href="webTen.html">Nine</a></li>
                     </ul>
-
                 </div>
 
-
-                <!--Hamburger menu button for mobile version-->
+                <!--Hamburger menu button for media query or shorter screens-->
                 <div class="hamburger-menu">
                     <button>
                         <span class="fa fa-bars"></span>
@@ -73,13 +68,12 @@
             </nav>
         </header>
 
-
         <!--Header 1-->
         <h1>
             <center>WHAT DO YOU KNOW ABOUT DATA SURVEILLANCE?</center>
         </h1>
 
-        <!--Link that gets to the webpage 2-->
+        <!--Div titleOne that will take you to webpagEtWO-->
         <div class="titleOne">
             <a href="webTwo.html" title="webpageTwo">Click here.</a>
         </div>
@@ -87,8 +81,7 @@
         <!--Class box to add space and divi my page-->
         <div class="box"></div>
 
-
-        <!--Breaks to add space and padding to my page, which to separate footer from the rest of the page-->
+        <!--Breaks to add space to my page, which to separate footer from the rest of the page-->
         <br>
         <br>
         <br>
@@ -101,7 +94,6 @@
         <br>
         <br>
         <br>
-
     </div>
 
     <footer>
@@ -116,13 +108,14 @@
                 <a href="#" class="fa fa-snapchat-ghost"></a>
             </div>
         </div>
+        <!--Copyright statement-->
         <small>
             This website was created as part of a student project. All content and design are copyright: Ashmitha
             Kanagiah,
             2025
         </small>
     </footer>
-
+    <!--javascript to enable media query-->
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -140,7 +133,6 @@
                 menu1.classList.remove('menu-deployed');
             });
         });
-
 
     </script>
 </body>

@@ -16,8 +16,6 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight);  //canvas size equals to the browser window's size
     canvas.position(0, 0)  //delimits where the canvas starts (which is position 0,0)
     canvas.style('z-index', '-1'); //this is to put the javascript canvas in the background, behind all the html and css
-    background(175);
-
 
 }
 
@@ -30,7 +28,6 @@ function draw() {
 }
 
 function moneySign() {
-
     //Adds a new money sign at a random position for its width and height
     moneyWidth.push(random(width));
     moneyHeight.push(random(height));
@@ -45,7 +42,6 @@ function moneySign() {
             moneyWidth.splice(i, 1);
             moneyHeight.splice(i, 1);
             moneyAlpha.splice(i, 1);
-
         }
 
         //draws the money signs onthe the canvas
@@ -56,5 +52,4 @@ function moneySign() {
         text('$', moneyWidth[i], moneyHeight[i]);
         pop();
     }
-
 }

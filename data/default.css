@@ -1,5 +1,6 @@
 /*Body which contains font, font propreties, background color*/
 body {
+    /*chosen font for all my text */
     font-family: "Roboto", "sans-serif";
     font-optical-sizing: auto;
     font-weight: 200;
@@ -7,8 +8,7 @@ body {
     font-variation-settings: "width" 100px;
     padding: 0;
     margin: 0;
-
-
+    /*bg color wont even be displayed since all the .js files will be on it */
     background-color: rgb(232, 224, 221);
 }
 
@@ -19,23 +19,15 @@ body {
     margin: 0 auto;
 }
 
-
 /*Header H1 propeties*/
 h1 {
     font-weight: 400;
     font-size: 35px;
-
     position: relative;
-    /* Moves it from the left side*/
-
-
     text-align: center;
     margin: 3vh auto;
-
     /* Color of the text  */
     color: rgb(0, 0, 0);
-
-
     /* Text shadow property adds glow to my text */
     text-shadow: 0 0 30px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
@@ -46,26 +38,16 @@ h1 {
 h2 {
     font-weight: 400;
     font-size: 60px;
-
     position: relative;
-    /* Moves it from the left side*/
-
-
     text-align: center;
+    /* Using rv, rem and vh as my scales since its easier to adjust according to different screens */
     margin: 10vh auto;
-    /* Moves it from the left side as well as the top side*/
-
-
-
     /* Color of the text */
     color: rgb(0, 0, 0);
-
     /* Text shadow property adds glow to my text */
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
-
-
 }
 
 /*Header H3 propeties*/
@@ -73,19 +55,11 @@ h3 {
     font-weight: 400;
     font-size: 50px;
     color: rgb(255, 255, 255);
-
-
-
     position: relative;
-    /* Moves it from the left side*/
-
-
     text-align: center;
     margin: 10vh auto;
-
     /* Color of the text */
     color: rgb(0, 0, 0);
-
     /* Text shadow property adds glow to my text */
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
@@ -97,14 +71,11 @@ h4 {
     font-weight: 400;
     font-size: 50px;
     color: rgb(255, 255, 255);
-
     position: relative;
     text-align: center;
     margin: 20vh auto;
-
     /* Color of the text */
     color: rgb(0, 0, 0);
-
     /* Text shadow property adds glow to my text */
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
@@ -116,39 +87,32 @@ h5 {
     font-weight: 400;
     font-size: 50px;
     color: rgb(255, 255, 255);
-
     position: relative;
     text-align: center;
     margin: 6vh auto;
-
     /* Color of the text */
     color: rgb(0, 0, 0);
-
     /* Text shadow property adds glow to my text */
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
 }
 
+/*Header H6 propeties*/
 h6 {
     font-weight: 400;
     font-size: 50px;
     color: rgb(255, 255, 255);
-
     position: relative;
     text-align: center;
     margin: 20vh auto;
-
     /* Color of the text */
     color: rgb(0, 0, 0);
-
     /* Text shadow property adds glow to my text */
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
 }
-
-/* Color of the text */
 
 /*menu1 propeties*/
 .menu1 {
@@ -158,11 +122,10 @@ h6 {
     justify-content: space-between;
     align-items: center;
     position: relative;
-
     z-index: 1010;
 }
 
-/*menu1 a ref*/
+/*menu1 a ref properties*/
 .menu1 a {
     font-weight: 400;
     display: block;
@@ -178,6 +141,7 @@ h6 {
     justify-content: center;
 }
 
+/*hamburger menu button*/
 .hamburger-menu button {
     background: none;
     border: none;
@@ -189,10 +153,10 @@ h6 {
     cursor: pointer;
 }
 
+/*close-menu properties*/
 .close-menu {
     display: none;
 }
-
 
 /* Title one properties*/
 .titleOne {
@@ -201,13 +165,9 @@ h6 {
     align-items: center;
     margin-top: 37vh;
     position: relative;
-
-
     z-index: 9999;
     pointer-events: auto;
-
     font-size: 1rem;
-
 }
 
 /* Title one link properties*/
@@ -215,44 +175,32 @@ h6 {
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
-
     position: relative;
     z-index: 10000;
     cursor: pointer;
-
     pointer-events: auto;
-
-
 }
 
 /* Title two properties*/
 .titleTwo {
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 20vh;
     position: relative;
-
-
-
     z-index: 9999;
     pointer-events: auto;
-
     font-size: 2rem;
-
 }
 
 /* Title two link properties*/
 .titleTwo a {
-
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
     pointer-events: auto;
-
     position: relative;
     z-index: 10000;
     cursor: pointer;
@@ -272,7 +220,6 @@ h6 {
     z-index: 100;
     z-index: 9999;
     pointer-events: auto;
-
     font-size: 2rem;
 }
 
@@ -287,14 +234,11 @@ h6 {
     position: relative;
     z-index: 10000;
     cursor: pointer;
-
-
     text-shadow: 0 0 10px rgb(255, 255, 255),
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255),
 
 }
-
 
 /* Title seven properties*/
 .titleSeven {
@@ -308,18 +252,15 @@ h6 {
     font-size: 2rem;
     z-index: 9999;
     pointer-events: auto;
-
 }
 
 /* Title seven link properties*/
 .titleSeven a {
-
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
     pointer-events: auto;
-
     position: relative;
     z-index: 10000;
     cursor: pointer;
@@ -328,7 +269,7 @@ h6 {
         0 0 30px rgb(255, 255, 255);
 }
 
-
+/* Title eight properties*/
 .titleEight {
     display: flex;
     justify-content: center;
@@ -343,15 +284,13 @@ h6 {
 
 }
 
-/* Title seven link properties*/
+/* Title eight link properties*/
 .titleEight a {
-
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
     pointer-events: auto;
-
     position: relative;
     z-index: 10000;
     cursor: pointer;
@@ -359,7 +298,6 @@ h6 {
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
 }
-
 
 /* Class accept properties*/
 .accept {
@@ -378,14 +316,12 @@ h6 {
 
 /*Class accept link properties*/
 .accept a {
-
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
     font-weight: 300;
     pointer-events: auto;
-
     position: relative;
     z-index: 10000;
     cursor: pointer;
@@ -393,7 +329,6 @@ h6 {
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
 }
-
 
 /* Class accepted properties*/
 .accepted {
@@ -407,7 +342,6 @@ h6 {
     z-index: 100;
     z-index: 9999;
     pointer-events: auto;
-
 }
 
 /* Class accepted link properties*/
@@ -425,9 +359,6 @@ h6 {
         0 0 20px rgb(255, 255, 255),
         0 0 30px rgb(255, 255, 255);
 }
-
-
-
 
 /* Ul properties, whicch is the link of all the options to my webpages, through the nav*/
 ul {
@@ -453,10 +384,8 @@ li a:hover {
     width: 50px;
 }
 
-
 /*nav propeties*/
 nav {
-
     line-height: 2rem;
     position: fixed;
     top: 5rem;
@@ -465,9 +394,7 @@ nav {
     z-index: 1000;
     margin-top: 0;
     pointer-events: auto;
-
 }
-
 
 /*nav a ref properties*/
 nav a {
@@ -475,16 +402,14 @@ nav a {
     color: rgb(223, 223, 223);
     font-weight: bold;
     pointer-events: auto;
-
-
 }
-
 
 /*nav hover properties */
 nav a:hover {
     color: rgb(255, 255, 255);
 }
 
+/*scrollText properties, which is my text in a scrollable format that I included in one of my pages */
 .scrollText {
     width: 1000px;
     height: 200px;
@@ -493,15 +418,12 @@ nav a:hover {
     padding: 10px;
     overflow-y: auto;
     color: rgb(255, 255, 255);
-
 }
 
+/*paragraph properties */
 p {
     margin-bottom: 10px;
 }
-
-
-
 
 /*footer properties */
 footer {
@@ -512,7 +434,6 @@ footer {
     font-style: italic;
 }
 
-
 /*footer a ref properties */
 footer a {
     text-decoration: none;
@@ -520,12 +441,12 @@ footer a {
 }
 
 
-
 /*media properties (for when the user views the webpage on a mobile device. it contains all 
 the same elements as above, but we added it in the @media portion as well as did some small
 altertations*/
 @media (max-width: 1024px) {
 
+    /*hamburger-menu properties */
     .hamburger-menu {
         display: flex;
         align-items: center;
@@ -534,11 +455,9 @@ altertations*/
         top: 20px;
         right: 20px;
         z-index: 2000;
-
     }
 
-
-
+    /*menu1 properties for media query*/
     .menu1 {
         display: none;
         position: fixed;
@@ -552,28 +471,28 @@ altertations*/
         align-items: center;
         z-index: 1500;
         pointer-events: none;
-
     }
 
+    /*menu1 a properties for media query*/
     .menu1 a {
-        padding: 20px;
+        padding: 8px 0;
         font-weight: 400;
         display: block;
         position: relative;
         text-align: center;
-
         color: rgb(0, 0, 0);
         text-decoration: none;
         background: transparent;
     }
 
-
+    /*menu1 a:hover properties for media query*/
     .menu1 a:hover {
         text-decoration: none;
         color: rgb(0, 0, 0);
         background-color: transparent;
     }
 
+    /*close-menu properties for media query*/
     .close-menu {
         display: block;
         position: absolute;
@@ -582,12 +501,10 @@ altertations*/
         font-size: 2em;
         color: black;
         cursor: pointer;
-
         z-index: 2100;
-
-
     }
 
+    /*menu-deployed properties for media query*/
     .menu-deployed {
         display: flex;
         flex-direction: column;
@@ -603,21 +520,25 @@ altertations*/
         padding-top: 50px;
     }
 
+    /*menu-deployed a properties for media query*/
     .menu-deployed a {
         color: black;
     }
 
+    /*menu1.show properties for media query*/
     .menu1.show {
         display: flex;
         pointer-events: auto;
 
     }
 
+    /*button properties for media query*/
     button {
         border-width: 0px;
         background-color: rgb(232, 224, 221);
     }
 
+    /*navgiation properties for media query*/
     nav {
         margin: 0 auto;
         margin-bottom: 50px;
@@ -636,15 +557,12 @@ altertations*/
         color: rgb(232, 224, 221);
     }
 
-
+    /*nav a properties for media query*/
     nav a {
         color: rgb(223, 223, 223);
     }
 
-    h1 {
-        margin-top: 50px;
-    }
-
+    /*wrapper properties for media query*/
     #wrapper {
         margin-top: 50px;
         position: relative;
@@ -654,9 +572,7 @@ altertations*/
         max-width: 1200px;
     }
 
-
-
-
+    /*body properties for media query*/
     body {
         font-family: "Roboto", "sans-serif";
         font-optical-sizing: auto;
@@ -665,35 +581,18 @@ altertations*/
         font-variation-settings: "width" 100px;
         padding: 0;
         margin: 0;
-
-
         background-color: rgb(232, 224, 221);
     }
-
-    /*Wrapper*/
-    #wrapper {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
 
     /*Header H1 propeties*/
     h1 {
         font-weight: 400;
         font-size: 35px;
-
         position: relative;
-        /* Moves it from the left side*/
-
-
         text-align: center;
         margin: 3vh auto;
-
         /* Color of the text  */
         color: rgb(0, 0, 0);
-
-
         /* Text shadow property adds glow to my text */
         text-shadow: 0 0 30px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
@@ -704,26 +603,15 @@ altertations*/
     h2 {
         font-weight: 400;
         font-size: 60px;
-
         position: relative;
-        /* Moves it from the left side*/
-
-
         text-align: center;
         margin: 10vh auto;
-        /* Moves it from the left side as well as the top side*/
-
-
-
         /* Color of the text */
         color: rgb(0, 0, 0);
-
         /* Text shadow property adds glow to my text */
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
             0 0 30px rgb(255, 255, 255);
-
-
     }
 
     /*Header H3 propeties*/
@@ -731,19 +619,11 @@ altertations*/
         font-weight: 400;
         font-size: 50px;
         color: rgb(255, 255, 255);
-
-
-
         position: relative;
-        /* Moves it from the left side*/
-
-
         text-align: center;
         margin: 10vh auto;
-
         /* Color of the text */
         color: rgb(0, 0, 0);
-
         /* Text shadow property adds glow to my text */
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
@@ -755,14 +635,11 @@ altertations*/
         font-weight: 400;
         font-size: 50px;
         color: rgb(255, 255, 255);
-
         position: relative;
         text-align: center;
         margin: 20vh auto;
-
         /* Color of the text */
         color: rgb(0, 0, 0);
-
         /* Text shadow property adds glow to my text */
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
@@ -774,40 +651,34 @@ altertations*/
         font-weight: 400;
         font-size: 50px;
         color: rgb(255, 255, 255);
-
         position: relative;
         text-align: center;
         margin: 20vh auto;
-
         /* Color of the text */
         color: rgb(0, 0, 0);
-
         /* Text shadow property adds glow to my text */
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
             0 0 30px rgb(255, 255, 255);
     }
 
+    /*Header H6 propeties*/
     h6 {
         font-weight: 400;
         font-size: 50px;
         color: rgb(255, 255, 255);
-
         position: relative;
         text-align: center;
         margin: 20vh auto;
-
         /* Color of the text */
         color: rgb(0, 0, 0);
-
         /* Text shadow property adds glow to my text */
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
             0 0 30px rgb(255, 255, 255);
     }
 
-
-
+    /*hamburger-menu button propeties*/
     .hamburger-menu button {
         background: none;
         border: none;
@@ -820,14 +691,14 @@ altertations*/
         cursor: pointer;
     }
 
+    /*menu1 ul propeties*/
     .menu1 ul {
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 5px;
         padding: 0;
     }
-
 
     /* Title one properties*/
     .titleOne {
@@ -835,9 +706,7 @@ altertations*/
         justify-content: center;
         align-items: center;
         margin-top: 10vh;
-
         font-size: 1rem;
-
     }
 
     /* Title one link properties*/
@@ -849,29 +718,23 @@ altertations*/
 
     /* Title two properties*/
     .titleTwo {
-
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-top: 10vh;
-
         font-size: 2rem;
-
     }
 
     /* Title two link properties*/
     .titleTwo a {
-
         color: rgb(255, 255, 255);
         background-color: transparent;
         text-decoration: none;
         border: #ffffff;
-
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
             0 0 30px rgb(255, 255, 255),
-
     }
 
     /* Title six properties*/
@@ -880,20 +743,15 @@ altertations*/
         justify-content: center;
         align-items: center;
         margin-top: 10vh;
-
         font-size: 2rem;
     }
 
     /* Title six link properties*/
     .titleSix a {
-
         color: rgb(255, 255, 255);
         background-color: transparent;
         text-decoration: none;
         border: #ffffff;
-
-
-
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
             0 0 30px rgb(255, 255, 255),
@@ -908,49 +766,40 @@ altertations*/
         align-items: center;
         text-align: center;
         margin-top: 10vh;
-
         font-size: 2rem;
-
     }
 
     /* Title seven link properties*/
     .titleSeven a {
-
         color: rgb(255, 255, 255);
         background-color: transparent;
         text-decoration: none;
         border: #ffffff;
-
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
             0 0 30px rgb(255, 255, 255);
     }
 
-
+    /* Title eight properties*/
     .titleEight {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-top: 10vh;
-
         font-size: 2rem;
-
     }
 
-    /* Title seven link properties*/
+    /* Title eight link properties*/
     .titleEight a {
-
         color: rgb(255, 255, 255);
         background-color: transparent;
         text-decoration: none;
         border: #ffffff;
-
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
             0 0 30px rgb(255, 255, 255);
     }
-
 
     /* Class accept properties*/
     .accept {
@@ -965,18 +814,15 @@ altertations*/
 
     /*Class accept link properties*/
     .accept a {
-
         color: rgb(255, 255, 255);
         background-color: transparent;
         text-decoration: none;
         border: #ffffff;
         font-weight: 300;
-
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
             0 0 30px rgb(255, 255, 255);
     }
-
 
     /* Class accepted properties*/
     .accepted {
@@ -986,7 +832,6 @@ altertations*/
         text-align: center;
         margin-top: 10vh;
         font-size: 2rem;
-
     }
 
     /* Class accepted link properties*/
@@ -996,22 +841,16 @@ altertations*/
         text-decoration: none;
         border: #ffffff;
         font-weight: 300;
-
         text-shadow: 0 0 10px rgb(255, 255, 255),
             0 0 20px rgb(255, 255, 255),
             0 0 30px rgb(255, 255, 255);
     }
-
-
-
 
     /* Ul properties, whicch is the link of all the options to my webpages, through the nav*/
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-
-
     }
 
     /* List a link properties*/
@@ -1029,16 +868,12 @@ altertations*/
         width: 50px;
     }
 
-
-
-
-
-
     /*nav hover properties */
     nav a:hover {
         color: rgb(255, 255, 255);
     }
 
+    /*scrollText properties for media query */
     .scrollText {
         width: 100%;
         height: 200px;
@@ -1047,34 +882,25 @@ altertations*/
         padding: 10px;
         overflow-y: auto;
         color: rgb(255, 255, 255);
-
     }
 
+    /*paragraph properties */
     p {
         margin-bottom: 10px;
     }
 
-
-
-
     /*footer properties */
     footer {
         margin-top: auto;
-
-
         min-height: 30px;
         font-size: lighter;
         text-align: right;
         font-style: italic;
     }
 
-
     /*footer a ref properties */
     footer a {
         text-decoration: none;
         color: darkgray;
     }
-
-
-
 }

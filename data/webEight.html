@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Meta Description for SEO-->
-    <meta name="description" content="Humans of New York">
+    <meta name="description" content="Data Awarness">
     <!--Open Graph for Social Sharing-->
-    <meta property="og:title" content="Humans of New York">
-    <meta property="og:description" content="Humans of New York">
+    <meta property="og:title" content="Data Awarness">
+    <meta property="og:description" content="Data Awarness">
     <!--Author and Copyright-->
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Ashmitha Kanagiah">
     <meta name="copyright" content="copyright Ashmitha Kanagiah, Student Project, Fall 2025">
     <!--Title-->
     <title>Data Awarness</title>
-
     <!-- Library script(s) -->
-
     <!-- p5.min.js is the main p5 library -->
     <script src="js/libraries/p5.min.js"></script>
     <!-- p5.sound.min.js allows us to use sound -->
     <script src="js/libraries/p5.sound.min.js"></script>
-
     <!-- My script(s) -->
     <script src="js/webEight.js"></script>
     <!--External Stylesheet-->
@@ -38,15 +35,16 @@
 <!--Body-->
 
 <body>
-
+    <!--wrapper-->
     <div id="wrapper">
         <!--Header-->
         <header>
             <!--Navigation-->
             <nav>
+                <!--menu1 which contains my list menu for all my 10 webpages-->
                 <div class="menu1">
                     <span class="close-menu">&times;</span>
-
+                    <!--All the links for all the webpages in my website-->
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="webTwo.html">One</a></li>
@@ -60,7 +58,8 @@
                         <li><a href="webTen.html">Nine</a></li>
                     </ul>
                 </div>
-                <!--Hamburger menu button for mobile version-->
+
+                <!--Hamburger menu button for media query or shorter screens-->
                 <div class="hamburger-menu">
                     <button>
                         <span class="fa fa-bars"></span>
@@ -69,19 +68,15 @@
             </nav>
         </header>
 
-
-
-        <!--Header 1-->
+        <!--Header 5-->
         <h5>
-
-
             <br>
-
             <center>Be mindful of what you let out on the internet.</center>
-
         </h5>
 
+        <!--class scrollText, which contains the paragraph for my scrollable text for the page-->
         <div class="scrollText">
+            <!--paragraphs-->
             <p>
                 Surveillance capitalism is one of the top practices nowaydays as we shift alot of our daily pratices and
                 routines on the internet and social media. Large corporations make huge profits
@@ -94,26 +89,14 @@
                 crucial information is stated in these terms as it tells in which way a corporation is using
                 our data and identity.
             </p>
-
             <p>We should pay closer attention to what we accept and give to the internet, as we are getting used for the
                 sole purpose of profitting these-scale corporations</p>
         </div>
 
-
+        <!--class titleEight which contains the link towards webpageNine-->
         <div class="titleEight">
-            <a href="webNine.html" title="Go to W3Schools HTML section">Continue.</a>
+            <a href="webNine.html" title="webpageNine">Continue.</a>
         </div>
-
-
-
-
-
-
-
-
-
-
-
 
         <footer>
             <!--Footer-->
@@ -127,14 +110,15 @@
                     <a href="#" class="fa fa-snapchat-ghost"></a>
                 </div>
             </div>
+            <!--Copyright statement-->
             <small>
                 This website was created as part of a student project. All content and design are copyright Ashmitha
                 Kanagiah,
                 2025
             </small>
         </footer>
-
     </div>
+    <!--javascript to enable media query-->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const hamburgerButton = document.querySelector('.hamburger-menu button');

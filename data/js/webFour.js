@@ -144,20 +144,14 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight); //canvas size equals to the browser window's size
     canvas.position(0, 0)  //delimits where the canvas starts (which is position 0,0)
     canvas.style('z-index', '-1'); //this is to put the javascript canvas in the background, behind all the html and css
-    background(175);
-
 
     lines = conditions.split('\n'); // this divides our condition texts into lines, split means it breaks it into lines. /n means new line
     y = height; // this assigns the value of height to the y variable
-
 }
 
 
 function draw() {
     background(26, 19, 59); //navy blue background
-
-
-
 
     for (let i = 0; i < lines.length; i++) {
         push(); //draws the line of text 
@@ -173,6 +167,5 @@ function draw() {
     if (y < -lines.length * 20) { //resets the canvas with the scrolling of our text when all the text has reached the top
         y = height;
     }
-
 
 }
