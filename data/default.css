@@ -777,7 +777,7 @@ altertations*/
 
         position: relative;
         text-align: center;
-        margin: 6vh auto;
+        margin: 20vh auto;
 
         /* Color of the text */
         color: rgb(0, 0, 0);
@@ -1059,7 +1059,9 @@ altertations*/
 
     /*footer properties */
     footer {
-        margin-top: 30px;
+        margin-top: auto;
+
+
         min-height: 30px;
         font-size: lighter;
         text-align: right;
