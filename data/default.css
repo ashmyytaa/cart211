@@ -400,9 +400,8 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
-    pointer-events: none;
-
     margin-top: 0;
+    pointer-events: auto;
 
 }
 
@@ -412,7 +411,6 @@ nav a {
     text-decoration: none;
     color: rgb(223, 223, 223);
     font-weight: bold;
-
     pointer-events: auto;
 
 
@@ -468,8 +466,15 @@ altertations*/
     .hamburger-menu {
         display: flex;
         align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 2000;
 
     }
+
+
 
     .menu1 {
         display: none;
@@ -482,7 +487,11 @@ altertations*/
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 1000;
+
+        z-index: 1500;
+
+        pointer-events: auto;
+
     }
 
     .menu1 a {
@@ -510,7 +519,10 @@ altertations*/
         top: 20px;
         right: 20px;
         font-size: 2em;
-        color: rgb(0, 0, 0);
+        color: black;
+        cursor: pointer;
+
+        z-index: 2100;
 
 
     }
@@ -732,28 +744,14 @@ altertations*/
             0 0 30px rgb(255, 255, 255);
     }
 
-    /* Color of the text */
 
-
-
-
-    /*menu1 a ref*/
-
-
-    /*hamburger menu properties*/
-    .hamburger-menu {
-
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .hamburger-menu button {
         background: none;
         border: none;
         font-size: 2em;
         color: gray;
+        cursor: pointer;
     }
 
     .hamburger-menu button .fa-bars {
