@@ -534,6 +534,11 @@ altertations*/
         color: black;
     }
 
+    .menu1.show {
+        display: flex;
+
+    }
+
     button {
         border-width: 0px;
         background-color: rgb(232, 224, 221);
