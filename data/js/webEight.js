@@ -54,7 +54,7 @@ function draw() {
         let y = centerY + sin(p.angle) * p.radius;
 
         // Draw particle
-        fill(217, 1, 102, p.alpha);
+        fill(255, 16, 240, p.alpha);
         ellipse(x, y, p.size);
 
         // Fade out

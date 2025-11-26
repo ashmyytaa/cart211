@@ -52,7 +52,7 @@ function gridd() { //function gridd() that sets up the rows and columns all thro
 
 function binary() { //function binary() that displays my numbers in random ways 
 
-    fill(217, 1, 102);
+    fill(255, 16, 240);
 
 
     for (let y = 0; y < rows; y++) { //to displau my numbers per row

@@ -100,7 +100,7 @@ h4 {
 
     position: relative;
     text-align: center;
-    margin: 6vh auto;
+    margin: 20vh auto;
 
     /* Color of the text */
     color: rgb(0, 0, 0);
@@ -228,8 +228,11 @@ h6 {
     background-color: transparent;
     text-decoration: none;
     border: #ffffff;
-    border-style: dashed;
-    border-width: 1px;
+
+    text-shadow: 0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 30px rgb(255, 255, 255),
+
 }
 
 /* Title six properties*/

@@ -51,7 +51,7 @@ function moneySign() {
         //draws the money signs onthe the canvas
         push();
         textSize(80);
-        fill(217, 1, 102, moneyAlpha[i]);
+        fill(255, 16, 240, moneyAlpha[i]);
         noStroke();
         text('$', moneyWidth[i], moneyHeight[i]);
         pop();

@@ -64,7 +64,7 @@ function drawEye(x, y) { //takes the x and y parameters from where i initialized
     //draws my eye shape
     push();
     fill(255);
-    stroke(255);
+    noStroke();
     ellipse(x, y, size, height);
     pop();
 

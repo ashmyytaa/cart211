@@ -25,7 +25,7 @@ function draw() {
     for (let a of accepts) { //for loop that will draw my "Accept" texts
 
         push(); //draws my text
-        fill(217, 1, 102, a.alpha);
+        fill(255, 16, 240, a.alpha);
         textSize(a.size);
         text("ACCEPT", a.x, a.y);
         pop();

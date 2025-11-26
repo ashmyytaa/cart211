@@ -60,7 +60,7 @@ function travel() {
         //draws our line
         push();
         noFill();
-        stroke(217, 1, 102);
+        stroke(255, 16, 240);
         strokeWeight(3);
         line(x1, y1, x2, y2);
         pop();
