@@ -554,17 +554,473 @@ altertations*/
     #wrapper {
         margin-top: 50px;
         position: relative;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         float: none;
+        max-width: 1200px;
     }
 
+
+
+
+    body {
+        font-family: "Roboto", "sans-serif";
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-variation-settings: "width" 100px;
+        padding: 0;
+        margin: 0;
+
+
+        background-color: rgb(232, 224, 221);
+    }
+
+    /*Wrapper*/
+    #wrapper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+    /*Header H1 propeties*/
+    h1 {
+        font-weight: 400;
+        font-size: 35px;
+
+        position: relative;
+        /* Moves it from the left side*/
+
+
+        text-align: center;
+        margin: 3vh auto;
+
+        /* Color of the text  */
+        color: rgb(0, 0, 0);
+
+
+        /* Text shadow property adds glow to my text */
+        text-shadow: 0 0 30px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+    }
+
+    /*Header H2 propeties*/
+    h2 {
+        font-weight: 400;
+        font-size: 60px;
+
+        position: relative;
+        /* Moves it from the left side*/
+
+
+        text-align: center;
+        margin: 10vh auto;
+        /* Moves it from the left side as well as the top side*/
+
+
+
+        /* Color of the text */
+        color: rgb(0, 0, 0);
+
+        /* Text shadow property adds glow to my text */
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+
+
+    }
+
+    /*Header H3 propeties*/
+    h3 {
+        font-weight: 400;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+
+
+
+        position: relative;
+        /* Moves it from the left side*/
+
+
+        text-align: center;
+        margin: 10vh auto;
+
+        /* Color of the text */
+        color: rgb(0, 0, 0);
+
+        /* Text shadow property adds glow to my text */
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+    }
+
+    /*Header H4 propeties*/
+    h4 {
+        font-weight: 400;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+
+        position: relative;
+        text-align: center;
+        margin: 20vh auto;
+
+        /* Color of the text */
+        color: rgb(0, 0, 0);
+
+        /* Text shadow property adds glow to my text */
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+    }
+
+    /*Header H5 propeties*/
+    h5 {
+        font-weight: 400;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+
+        position: relative;
+        text-align: center;
+        margin: 6vh auto;
+
+        /* Color of the text */
+        color: rgb(0, 0, 0);
+
+        /* Text shadow property adds glow to my text */
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+    }
+
+    h6 {
+        font-weight: 400;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+
+        position: relative;
+        text-align: center;
+        margin: 20vh auto;
+
+        /* Color of the text */
+        color: rgb(0, 0, 0);
+
+        /* Text shadow property adds glow to my text */
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+    }
+
+    /* Color of the text */
+
+    /*menu1 propeties*/
+    .menu1 {
+        display: inline-flex;
+        gap: 10px;
+        background: rgb(236, 231, 227);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*menu1 a ref*/
+    .menu1 a {
+        font-weight: 400;
+        display: block;
+        position: relative;
+        text-align: justify;
+    }
+
+    /*hamburger menu properties*/
+    .hamburger-menu {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger-menu button {
+        background: none;
+        border: none;
+        font-size: 2em;
+        color: gray;
+    }
+
+    .hamburger-menu button .fa-bars {
+        cursor: pointer;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+
+    /* Title one properties*/
+    .titleOne {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+
+        font-size: 1rem;
+
+    }
+
+    /* Title one link properties*/
+    .titleOne a {
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    /* Title two properties*/
+    .titleTwo {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10vh;
+
+        font-size: 2rem;
+
+    }
+
+    /* Title two link properties*/
+    .titleTwo a {
+
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: none;
+        border: #ffffff;
+
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255),
+
+    }
+
+    /* Title six properties*/
+    .titleSix {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+
+        font-size: 2rem;
+    }
+
+    /* Title six link properties*/
+    .titleSix a {
+
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: none;
+        border: #ffffff;
+
+
+
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255),
+
+    }
+
+
+    /* Title seven properties*/
+    .titleSeven {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10vh;
+
+        font-size: 2rem;
+
+    }
+
+    /* Title seven link properties*/
+    .titleSeven a {
+
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: none;
+        border: #ffffff;
+
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+    }
+
+
+    .titleEight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10vh;
+
+        font-size: 2rem;
+
+    }
+
+    /* Title seven link properties*/
+    .titleEight a {
+
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: none;
+        border: #ffffff;
+
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+    }
+
+
+    /* Class accept properties*/
+    .accept {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10vh;
+        font-size: 3rem;
+        gap: 2rem;
+    }
+
+    /*Class accept link properties*/
+    .accept a {
+
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: none;
+        border: #ffffff;
+        font-weight: 300;
+
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+    }
+
+
+    /* Class accepted properties*/
+    .accepted {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10vh;
+        font-size: 2rem;
+
+    }
+
+    /* Class accepted link properties*/
+    .accepted a {
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: none;
+        border: #ffffff;
+        font-weight: 300;
+
+        text-shadow: 0 0 10px rgb(255, 255, 255),
+            0 0 20px rgb(255, 255, 255),
+            0 0 30px rgb(255, 255, 255);
+    }
+
+
+
+
+    /* Ul properties, whicch is the link of all the options to my webpages, through the nav*/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    /* List a link properties*/
+    li a {
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    /* List a link hover properties*/
+    li a:hover {
+        background-color: #ce359d;
+        color: white;
+        width: 50px;
+    }
+
+
+    /*nav propeties*/
+    nav {
+
+        line-height: 2rem;
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        pointer-events: none;
+
+        margin-top: 0;
+
+    }
+
+
+    /*nav a ref properties*/
+    nav a {
+        text-decoration: none;
+        color: rgb(223, 223, 223);
+        font-weight: bold;
+
+        pointer-events: auto;
+
+
+    }
+
+
+    /*nav hover properties */
+    nav a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    .scrollText {
+        width: 100%;
+        height: 200px;
+        margin: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: auto;
+        color: rgb(255, 255, 255);
+
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+
+
+
+    /*footer properties */
     footer {
-        margin-top: 70px;
-        font-size: 10px;
+        margin-top: 30px;
+        min-height: 30px;
+        font-size: lighter;
+        text-align: right;
+        font-style: italic;
     }
 
 
+    /*footer a ref properties */
+    footer a {
+        text-decoration: none;
+        color: darkgray;
+    }
 
 
 
