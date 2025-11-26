@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Meta Description for SEO-->
-    <meta name="description" content="Humans of New York">
+    <meta name="description" content="Data Awarness">
     <!--Open Graph for Social Sharing-->
-    <meta property="og:title" content="Humans of New York">
-    <meta property="og:description" content="Humans of New York">
+    <meta property="og:title" content="Data Awarnessk">
+    <meta property="og:description" content="Data Awarness">
     <!--Author and Copyright-->
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Ashmitha Kanagiah">
     <meta name="copyright" content="copyright Ashmitha Kanagiah, Student Project, Fall 2025">
     <!--Title-->
     <title>Data Awarness</title>
-
     <!-- Library script(s) -->
-
     <!-- p5.min.js is the main p5 library -->
     <script src="js/libraries/p5.min.js"></script>
     <!-- p5.sound.min.js allows us to use sound -->
     <script src="js/libraries/p5.sound.min.js"></script>
-
     <!-- My script(s) -->
     <script src="js/webFour.js"></script>
     <!--External Stylesheet-->
@@ -38,15 +35,15 @@
 <!--Body-->
 
 <body>
-
+    <!--wrapper-->
     <div id="wrapper">
         <!--Header-->
         <header>
             <!--Navigation-->
             <nav>
+                <!--menu1 which contains my list menu for all my 10 webpages-->
                 <div class="menu1">
                     <span class="close-menu">&times;</span>
-
                     <!--All the links for all the webpages in my website-->
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -62,7 +59,7 @@
                     </ul>
 
                 </div>
-                <!--Hamburger menu button for mobile version-->
+                <!--Hamburger menu button for media query or shorter screens-->
                 <div class="hamburger-menu">
                     <button>
                         <span class="fa fa-bars"></span>
@@ -71,9 +68,7 @@
             </nav>
         </header>
 
-
-
-        <!--Header 1-->
+        <!--Header 4-->
         <h4>
             <center>This is what you accepted.</center>
 
@@ -81,15 +76,10 @@
 
         <!--Class accepted which contains the link to the webpage 6-->
         <div class="accepted">
-            <a href="webSix.html" title="Go to W3Schools HTML section">Continue</a>
+            <a href="webSix.html" title="webpageSix">Continue</a>
         </div>
 
-
-
-        <!--Class box to add space and divide my page-->
-        <div class="box"></div>
-
-
+        <!--Breaks to add space to my page, which to separate footer from the rest of the page-->
         <br>
         <br>
         <br>
@@ -100,8 +90,6 @@
         <br>
         <br>
         <br>
-
-
 
         <footer>
             <!--Footer-->
@@ -116,6 +104,7 @@
                 </div>
             </div>
             <small>
+                <!--Copyright statement-->
                 This website was created as part of a student project. All content and design are copyright Ashmitha
                 Kanagiah,
                 2025
@@ -123,6 +112,7 @@
         </footer>
 
     </div>
+    <!--javascript to enable media query-->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const hamburgerButton = document.querySelector('.hamburger-menu button');

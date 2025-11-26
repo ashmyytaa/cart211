@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Meta Description for SEO-->
-    <meta name="description" content="Humans of New York">
+    <meta name="description" content="Data Awarness">
     <!--Open Graph for Social Sharing-->
-    <meta property="og:title" content="Humans of New York">
-    <meta property="og:description" content="Humans of New York">
+    <meta property="og:title" content="Data Awarness">
+    <meta property="og:description" content="Data Awarness">
     <!--Author and Copyright-->
     <meta name="author" content="Your Name">
     <meta name="copyright" content="copyright Ashmitha Kanagiah, Student Project, Fall 2025">
     <!--Title-->
     <title>Data Awarness</title>
-
     <!-- Library script(s) -->
-
     <!-- p5.min.js is the main p5 library -->
     <script src="js/libraries/p5.min.js"></script>
     <!-- p5.sound.min.js allows us to use sound -->
     <script src="js/libraries/p5.sound.min.js"></script>
-
     <!-- My script(s) -->
     <script src="js/webTwo.js"></script>
     <!--External Stylesheet-->
@@ -38,15 +35,15 @@
 <!--Body-->
 
 <body>
-
+    <!--wrapper-->
     <div id="wrapper">
         <!--Header-->
         <header>
             <!--Navigation-->
             <nav>
+                <!--menu1 which contains my list menu for all my 10 webpages-->
                 <div class="menu1">
                     <span class="close-menu">&times;</span>
-
                     <!--All the links for all the webpages in my website-->
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -60,7 +57,6 @@
                         <li><a href="webNine.html">Eight</a></li>
                         <li><a href="webTen.html">Nine</a></li>
                     </ul>
-
                 </div>
                 <!--Hamburger menu button for mobile version-->
                 <div class="hamburger-menu">
@@ -71,21 +67,17 @@
             </nav>
         </header>
 
-
-
         <!--Header 2-->
         <h2>
             <center>This is what data looks like</center>
         </h2>
-        <!--Link that gets to the webpage 3-->
+
+        <!--Class accepted which contains the link to the webpage 3-->
         <div class="titleTwo">
             <a href="webThree.html" title="webThree">Click to know what it really means.</a>
         </div>
 
-        <!--Class box to add space and divi my page-->
-        <div class="box"></div>
-
-        <!--Breaks to add space and padding to my page, which to separate footer from the rest of the page-->
+        <!--Breaks to add space to my page, which to separate footer from the rest of the page-->
         <br>
         <br>
         <br>
@@ -99,8 +91,6 @@
         <br>
         <br>
         <br>
-
-
 
         <footer>
             <!--Footer-->
@@ -114,14 +104,17 @@
                     <a href="#" class="fa fa-snapchat-ghost"></a>
                 </div>
             </div>
+
+            <!--Copyright statement-->
             <small>
                 This website was created as part of a student project. All content and design are copyright Ashmitha
                 Kanagiah,
                 2025
             </small>
         </footer>
-
     </div>
+
+    <!--javascript to enable media query-->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const hamburgerButton = document.querySelector('.hamburger-menu button');
