@@ -714,14 +714,8 @@ altertations*/
 
     /* Color of the text */
 
-    /*menu1 propeties*/
-    .menu1 {
-        display: inline-flex;
-        gap: 10px;
-        background: rgb(236, 231, 227);
-        justify-content: space-between;
-        align-items: center;
-    }
+
+
 
     /*menu1 a ref*/
     .menu1 a {
